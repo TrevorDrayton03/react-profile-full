@@ -29,8 +29,8 @@ Define color variables
 
   /* Background colors */
   --color-background: #121212;
-  --color-surface: #121212;
-
+  --color-surface: #141414;
+  /* #141414. is 10% lighter than #121212 */
   /* Error color */
   --color-error: #CF6679;
 
@@ -53,7 +53,7 @@ Define color variables
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 15s linear;
+    animation: App-logo-spin infinite 3s ease-in-out;
   }
 }
 
@@ -102,21 +102,26 @@ html {
 
 .navbar {
   margin-top: 15px !important;
-  margin-left: 50px !important;
+  margin-left: 100px !important;
 }
 
 .nav-link {
+  color: var(--color-on-surface) !important;
+  padding: 20px !important;
+}
+
+.nav-link:hover {
   color: var(--color-primary) !important;
 }
 
 .navbar-nav {
-  margin-right: 100px !important;
+  margin-right: 200px !important;
 }
 
 .navbar-toggler {
   color: var(--color-secondary) !important;
   border-color: var(--color-primary) !important;
-  margin-right: 50px !important;
+  margin-right: 200px !important;
 }
 
 /* manually (rgba) change color of navbar toggler icon */
@@ -151,15 +156,84 @@ svg {
   font-weight: 400;
 }
 
-.line {
-  content: "";
+/* .line1 {
   position: absolute;
   top: 150px;
   left: 0px;
   height: 1px;
-  width: 100px;
+  width: 75px;
   background-color: var(--color-on-surface);
-  justify-content: flex-start;
-  align-items: flex-start;
+} */
+
+.line1 {
+  position: absolute;
+  top: 245px;
+  left: 0px;
+  height: 1px;
+  width: 65px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--color-on-surface);
+
+}
+
+.line1-text {
+  position: absolute;
+  top: 230px;
+  left: 85px;
+  font-size: 16px;
+  color: var(--color-on-surface);
+  display: flex;
+  width: 150px;
+  height: 45px;
+  padding: 5px;
+}
+
+.line2 {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  height: 1px;
+  width: 30px;
+  background-color: var(--color-on-surface);
+}
+
+.line2-text {
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  font-size: 16px;
+  color: var(--color-on-surface);
+}
+
+a {
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.3s ease-in-out;
+}
+
+/* stops the nav-links*/
+a:not(.navbar *):hover {
+  stroke: var(--color-primary);
+  bottom: 10px;
+}
+
+/* stops the nav-brand*/
+a:not(.navbar *):hover svg path {
+  stroke: var(--color-primary);
+}
+
+/* a:hover .navbar * {
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0) !important;
+} */
+
+/* polyline and rect are for the svgs */
+a:hover polyline {
+  stroke: var(--color-primary);
+}
+
+a:hover rect {
+  stroke: var(--color-primary);
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Icon() {
+function Logo() {
   return (
     <svg
       id="gear"
@@ -25,4 +25,4 @@ function Icon() {
   );
 }
 
-export default Icon;
+export default Logo;

@@ -1,11 +1,10 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from './Logo.jsx';
+import Logo from './icons/Logo.jsx';
 
 const NavBar = () => {
     return (
         <Navbar fixed="top" expand="lg">
-            {/* <div className="container"> */}
             <Navbar.Brand href="#home" className="svg-container">
                 <Logo>
                 </Logo>
@@ -22,7 +21,6 @@ const NavBar = () => {
                     <Nav.Link href="#resume">Resume</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-            {/* </div> */}
         </Navbar>
     );
 }

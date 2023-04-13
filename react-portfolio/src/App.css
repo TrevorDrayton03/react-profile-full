@@ -1,0 +1,165 @@
+/* 
+Material Dark Theme
+https://m2.material.io/design/color/dark-theme.html#ui-application
+
+Primary:          #BB86FC
+PrimaryVariant:   #3700B3
+Secondary:        #03DAC6
+Background:       #121212
+Surface:          #121212
+Error:            #CF6679
+On Primary:       #000000
+On Secondary:     #000000
+On Background:    #000000
+On Surface:       #FFFFFF
+On Error:         #FFFFFF
+
+*/
+
+/* 
+Define color variables
+*/
+:root {
+  /* Primary colors */
+  --color-primary: #BB86FC;
+  --color-primary-variant: #3700B3;
+
+  /* Secondary colors */
+  --color-secondary: #03DAC6;
+
+  /* Background colors */
+  --color-background: #121212;
+  --color-surface: #121212;
+
+  /* Error color */
+  --color-error: #CF6679;
+
+  /* Text colors */
+  --color-on-primary: #000000;
+  --color-on-secondary: #000000;
+  --color-on-background: #000000;
+  --color-on-surface: #FFFFFF;
+  --color-on-error: #FFFFFF;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: 'Roboto', Times, sans-serif;
+  font-size: 17px;
+  padding: 20px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background) !important;
+  /* width: 100; */
+}
+
+/* prevent horizontal scrollingF */
+body,
+html {
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 15px !important;
+  margin-left: 50px !important;
+}
+
+.nav-link {
+  color: var(--color-primary) !important;
+}
+
+.navbar-nav {
+  margin-right: 100px !important;
+}
+
+.navbar-toggler {
+  color: var(--color-secondary) !important;
+  border-color: var(--color-primary) !important;
+  margin-right: 50px !important;
+}
+
+/* manually (rgba) change color of navbar toggler icon */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(187, 134, 252, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+nav {
+  width: 100% !important;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  fill: none;
+}
+
+.svg-container {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+  font-family: "Calibre-Medium", "Calibre";
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  height: 1px;
+  width: 100px;
+  background-color: var(--color-on-surface);
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}

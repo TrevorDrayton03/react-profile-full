@@ -23,9 +23,12 @@ Define color variables
   /* Primary colors */
   --color-primary: #BB86FC;
   --color-primary-variant: #3700B3;
+  --color-primary-variant-2: #1A0080;
+  --color-primary-variant-3: #211653;
 
   /* Secondary colors */
   --color-secondary: #03DAC6;
+  --color-secondary-2: #008E87;
 
   /* Background colors */
   --color-background: #121212;
@@ -39,7 +42,25 @@ Define color variables
   --color-on-secondary: #000000;
   --color-on-background: #000000;
   --color-on-surface: #FFFFFF;
+  --color-on-surface-2: #A6A6A6;
   --color-on-error: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-variant);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-variant-2);
 }
 
 .App {
@@ -48,7 +69,6 @@ Define color variables
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -101,13 +121,11 @@ html {
 }
 
 .navbar {
-  margin-top: 15px !important;
+  background-color: var(--color-background) !important;
   padding-left: 30px !important;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); */
   transition: top .3s;
 }
 
@@ -181,30 +199,78 @@ svg {
   font-weight: 400;
 }
 
-.section {
+.intro {
   position: relative;
-  /* flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: flex;
-  flex: 1; */
   left: calc(20% - 100px);
   color: var(--color-primary);
+  padding-bottom: 300px;
 }
 
-.section p {
+.intro p {
   font-size: 20px;
 }
 
-.section h1 {
+.intro .body {
+  font-size: 18px;
+  color: var(--color-on-surface-2);
+  width: 55% !important;
+}
+
+.intro h1 {
   color: var(--color-on-surface);
   font-size: 60px;
 }
 
-.section h2 {
+.intro h2 {
   color: var(--color-on-surface);
   filter: brightness(0.65);
-  font-size: 50px;
+  font-size: 60px;
+}
+
+.about {
+  position: relative;
+  left: calc(20% - 100px);
+  color: var(--color-primary);
+  padding-bottom: 500px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about .body {
+  font-size: 18px;
+  color: var(--color-on-surface);
+  filter: brightness(0.65);
+  width: 80% !important;
+}
+
+.about h1 {
+  color: var(--color-on-surface);
+  font-size: 60px;
+}
+
+.about h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -15px;
+  width: calc(69% - 150px);
+  height: 1px;
+  margin-left: 180px;
+  background-color: var(--color-on-surface);
+}
+
+.about h2 {
+  color: var(--color-on-surface);
+  filter: brightness(0.65);
+  font-size: 60px;
+}
+
+.about h3 {
+  /* color: var(--color-on-surface);
+  filter: brightness(0.65); */
+  font-size: 30px;
 }
 
 .main-container {
@@ -225,6 +291,10 @@ svg {
 
   .main-container {
     max-width: calc(90%);
+  }
+
+  .intro .body {
+    width: 100% !important;
   }
 }
 
@@ -252,8 +322,12 @@ svg {
   }
 
   .main-container {
-    max-width: calc(90% - 20px);
+    max-width: calc(80% - 100px);
     left: calc(15%);
+  }
+
+  .intro .body {
+    width: 70% !important;
   }
 }
 
@@ -284,21 +358,36 @@ svg {
   }
 
   .main-container {
-    max-width: calc(90% - 150px);
+    max-width: calc(90% - 170px);
     left: calc(18%);
+  }
+
+  .intro .body {
+    width: 50% !important;
   }
 }
 
-a {
+a:not(.main-container *) {
   position: relative;
   bottom: 0;
   transition: bottom 0.3s ease-in-out;
 }
 
 /* stops the nav-links*/
-a:not(.navbar *):hover {
+a:not(.navbar *, .main-container *):hover {
   stroke: var(--color-primary);
   bottom: 10px;
+}
+
+.main-container a {
+  color: var(--color-primary);
+  bottom: 10px;
+  /* font-weight: bold; */
+}
+
+.main-container a:hover {
+  color: var(--color-primary);
+  filter: brightness(0.65);
 }
 
 /* stops the nav-brand*/

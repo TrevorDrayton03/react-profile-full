@@ -4,6 +4,7 @@ import '../src/App.css';
 // import petUniverseVideo from './projects/pet-universe/video.mp4';
 import NavBar from './sections/NavBar'
 import Intro from './sections/Intro'
+import About from './sections/About'
 import LinkedinIcon from './icons/LinkedinIcon';
 import GithubIcon from './icons/GithubIcon';
 import MailIcon from './icons/MailIcon';
@@ -32,6 +33,7 @@ function App() {
         <span className="line2-text">trevorpdrayton@gmail.com</span>
       </a> */}
         <Intro></Intro>
+        <About></About>
       </div>
     </div>
   )

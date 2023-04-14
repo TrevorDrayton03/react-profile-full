@@ -48,8 +48,8 @@ Define color variables
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -68,13 +68,13 @@ Define color variables
 }
 
 body {
-  font-family: 'Roboto', Times, sans-serif;
+  font-family: 'Ubuntu', sans-serif !important;
   font-size: 17px;
   padding: 20px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-background) !important;
-  /* width: 100; */
+  min-width: 200px
 }
 
 /* prevent horizontal scrollingF */
@@ -86,7 +86,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .container {
@@ -102,12 +102,23 @@ html {
 
 .navbar {
   margin-top: 15px !important;
-  margin-left: 100px !important;
+  padding-left: 30px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); */
+  transition: top .3s;
+}
+
+.hide {
+  top: -40px
 }
 
 .nav-link {
   color: var(--color-on-surface) !important;
-  padding: 20px !important;
+  padding-left: 30px !important;
+  font-size: 18px !important;
 }
 
 .nav-link:hover {
@@ -115,18 +126,29 @@ html {
 }
 
 .navbar-nav {
-  margin-right: 200px !important;
+  padding-right: 30px !important;
 }
 
 .navbar-toggler {
-  color: var(--color-secondary) !important;
-  border-color: var(--color-primary) !important;
-  margin-right: 200px !important;
+  /* color: var(--color-secondary) !important; */
+  border-color: transparent !important;
+  padding-right: 30px !important;
+}
+
+.navbar-toggler:hover {
+  filter: brightness(0.7) !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /* manually (rgba) change color of navbar toggler icon */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(187, 134, 252, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-size: 50px 50px;
 }
 
 nav {
@@ -145,67 +167,126 @@ svg {
   position: relative;
 }
 
-.text-container {
+.svg-container:hover {
+  filter: brightness(0.7);
+}
+
+.logo-text {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--color-primary);
-  font-family: "Calibre-Medium", "Calibre";
   font-size: 40px;
   font-weight: 400;
 }
 
-/* .line1 {
-  position: absolute;
-  top: 150px;
-  left: 0px;
-  height: 1px;
-  width: 75px;
-  background-color: var(--color-on-surface);
-} */
-
-.line1 {
-  position: absolute;
-  top: 245px;
-  left: 0px;
-  height: 1px;
-  width: 65px;
+.section {
+  position: relative;
+  /* flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: var(--color-on-surface);
-
+  flex: 1; */
+  left: calc(20% - 100px);
+  color: var(--color-primary);
 }
 
-.line1-text {
-  position: absolute;
-  top: 230px;
-  left: 85px;
-  font-size: 16px;
+.section p {
+  font-size: 20px;
+}
+
+.section h1 {
   color: var(--color-on-surface);
-  display: flex;
-  width: 150px;
-  height: 45px;
-  padding: 5px;
+  font-size: 60px;
 }
 
-.line2 {
-  position: absolute;
-  top: 200px;
-  left: 0px;
-  height: 1px;
-  width: 30px;
-  background-color: var(--color-on-surface);
-}
-
-.line2-text {
-  position: absolute;
-  top: 190px;
-  left: 50px;
-  font-size: 16px;
+.section h2 {
   color: var(--color-on-surface);
+  filter: brightness(0.65);
+  font-size: 50px;
+}
+
+.main-container {
+  position: absolute;
+  top: 250px;
+  padding-right: 30px;
+  /* or any other value that suits your needs */
+}
+
+@media only screen and (max-width: 749px) {
+  .line1 {
+    visibility: hidden;
+  }
+
+  .line1-text {
+    visibility: hidden;
+  }
+
+  .main-container {
+    max-width: calc(90%);
+  }
+}
+
+
+@media only screen and (min-width:750px) and (max-width: 999px) {
+  .line1 {
+    visibility: hidden;
+  }
+
+  .line1-text {
+    position: fixed;
+    top: 230px;
+    left: 45px;
+    font-size: 16px;
+    color: var(--color-on-surface);
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+  }
+
+  .line1-text a {
+    height: 70px;
+  }
+
+  .main-container {
+    max-width: calc(90% - 20px);
+    left: calc(15%);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .line1 {
+    position: fixed;
+    top: 245px;
+    left: 0px;
+    height: 1px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color-on-surface);
+  }
+
+  .line1-text {
+    position: fixed;
+    top: 230px;
+    left: 75px;
+    font-size: 16px;
+    color: var(--color-on-surface);
+    display: flex;
+    width: 150px;
+    height: 45px;
+    padding: 5px;
+  }
+
+  .main-container {
+    max-width: calc(90% - 150px);
+    left: calc(18%);
+  }
 }
 
 a {
@@ -224,10 +305,6 @@ a:not(.navbar *):hover {
 a:not(.navbar *):hover svg path {
   stroke: var(--color-primary);
 }
-
-/* a:hover .navbar * {
-  background-image: linear-gradient(rgb(0 0 0/40%) 0 0) !important;
-} */
 
 /* polyline and rect are for the svgs */
 a:hover polyline {

@@ -1,14 +1,17 @@
+import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from './icons/Logo.jsx';
+import Logo from '../icons/Logo.jsx';
 
 const NavBar = () => {
+    const [isHide, setisHide] = useState(false);
+
     return (
         <Navbar fixed="top" expand="lg">
-            <Navbar.Brand href="#home" className="svg-container">
+            <Navbar.Brand href="#home" className="svg-container dark-hover">
                 <Logo>
                 </Logo>
-                <div class="text-container">
+                <div class="logo-text">
                     <p>T</p>
                 </div>
             </Navbar.Brand>
@@ -18,7 +21,7 @@ const NavBar = () => {
                     <Nav.Link href="#home">About</Nav.Link>
                     <Nav.Link href="#projects">Projects</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
-                    <Nav.Link href="#resume">Resume</Nav.Link>
+                    {/* <Nav.Link href="#resume">Resume</Nav.Link> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

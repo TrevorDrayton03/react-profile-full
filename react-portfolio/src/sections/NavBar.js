@@ -7,11 +7,11 @@ const NavBar = () => {
     const [isHide, setisHide] = useState(false);
 
     return (
-        <Navbar fixed="top" expand="lg">
+        <Navbar fixed="top" expand="md">
             <Navbar.Brand href="#home" className="svg-container dark-hover">
                 <Logo>
                 </Logo>
-                <div class="logo-text">
+                <div className="logo-text">
                     <p>T</p>
                 </div>
             </Navbar.Brand>

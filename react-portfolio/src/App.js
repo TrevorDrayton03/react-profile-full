@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <div className="line1" />
       <span className="line1-text">
-        <a href="https://www.linkedin.com/in/trevor-drayton/" target="_blank" className="App-anchor">
+        <a href="https://www.linkedin.com/in/trevor-drayton/" target="_blank">
           <LinkedinIcon />
         </a>
         <a href="https://github.com/TrevorDrayton03" target="_blank">

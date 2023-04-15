@@ -56,20 +56,20 @@ Define color variables
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary-variant);
+  background: var(--color-secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary-variant-2);
+  background: var(--color-secondary-2);
 }
 
-.App {
+/* .App {
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -148,7 +148,6 @@ html {
 }
 
 .navbar-toggler {
-  /* color: var(--color-secondary) !important; */
   border-color: transparent !important;
   padding-right: 30px !important;
 }
@@ -213,18 +212,20 @@ svg {
 .intro .body {
   font-size: 18px;
   color: var(--color-on-surface-2);
-  width: 55% !important;
+  max-width: 540px;
 }
 
 .intro h1 {
   color: var(--color-on-surface);
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: clamp(40px, 8vw, 80px);
 }
 
 .intro h2 {
   color: var(--color-on-surface);
   filter: brightness(0.65);
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: clamp(40px, 8vw, 80px);
 }
 
 .about {
@@ -277,10 +278,32 @@ svg {
   position: absolute;
   top: 250px;
   padding-right: 30px;
-  /* or any other value that suits your needs */
+  max-width: 1000px;
+  padding-left: 50px;
 }
 
-@media only screen and (max-width: 749px) {
+.line1 {
+  visibility: hidden;
+}
+
+.line1-text {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  font-size: 16px;
+  color: var(--color-on-surface);
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+
+.line1-text a {
+  height: 70px;
+}
+
+@media only screen and (max-width: 767px) {
   .line1 {
     visibility: hidden;
   }
@@ -288,82 +311,15 @@ svg {
   .line1-text {
     visibility: hidden;
   }
-
-  .main-container {
-    max-width: calc(90%);
-  }
-
-  .intro .body {
-    width: 100% !important;
-  }
 }
 
-
-@media only screen and (min-width:750px) and (max-width: 999px) {
-  .line1 {
-    visibility: hidden;
-  }
-
-  .line1-text {
-    position: fixed;
-    top: 230px;
-    left: 45px;
-    font-size: 16px;
-    color: var(--color-on-surface);
+@media only screen and (min-width:1000px) {
+  .App {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 45px;
-    height: 45px;
-    padding: 5px;
-  }
-
-  .line1-text a {
-    height: 70px;
-  }
-
-  .main-container {
-    max-width: calc(80% - 100px);
-    left: calc(15%);
-  }
-
-  .intro .body {
-    width: 70% !important;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .line1 {
-    position: fixed;
-    top: 245px;
-    left: 0px;
-    height: 1px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background-color: var(--color-on-surface);
-  }
-
-  .line1-text {
-    position: fixed;
-    top: 230px;
-    left: 75px;
-    font-size: 16px;
-    color: var(--color-on-surface);
-    display: flex;
-    width: 150px;
-    height: 45px;
-    padding: 5px;
-  }
-
-  .main-container {
-    max-width: calc(90% - 170px);
-    left: calc(18%);
-  }
-
-  .intro .body {
-    width: 50% !important;
+    justify-content: center;
   }
 }
 
@@ -382,7 +338,6 @@ a:not(.navbar *, .main-container *):hover {
 .main-container a {
   color: var(--color-primary);
   bottom: 10px;
-  /* font-weight: bold; */
 }
 
 .main-container a:hover {

@@ -358,3 +358,7 @@ a:hover polyline {
 a:hover rect {
   stroke: var(--color-primary);
 }
+
+a:hover circle {
+  stroke: var(--color-primary);
+}

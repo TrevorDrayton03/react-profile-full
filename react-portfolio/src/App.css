@@ -16,28 +16,17 @@ On Error:         #FFFFFF
 
 */
 
-/* 
-Define color variables
-*/
 :root {
-  /* Primary colors */
   --color-primary: #BB86FC;
   --color-primary-variant: #3700B3;
   --color-primary-variant-2: #1A0080;
   --color-primary-variant-3: #211653;
-
-  /* Secondary colors */
   --color-secondary: #03DAC6;
   --color-secondary-2: #008E87;
-
-  /* Background colors */
   --color-background: #121212;
-  --color-surface: #141414;
   /* #141414. is 10% lighter than #121212 */
-  /* Error color */
+  --color-surface: #141414;
   --color-error: #CF6679;
-
-  /* Text colors */
   --color-on-primary: #000000;
   --color-on-secondary: #000000;
   --color-on-background: #000000;
@@ -83,7 +72,7 @@ Define color variables
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
 }
 
@@ -123,6 +112,7 @@ html {
 .navbar {
   background-color: var(--color-background) !important;
   padding-left: 30px !important;
+  padding-top: 30px !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -217,22 +207,21 @@ svg {
 
 .intro h1 {
   color: var(--color-on-surface);
-  /* font-size: 60px; */
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 8vw, 75px);
 }
 
 .intro h2 {
-  color: var(--color-on-surface);
-  filter: brightness(0.65);
-  /* font-size: 60px; */
-  font-size: clamp(40px, 8vw, 80px);
+  color: var(--color-on-surface-2);
+  font-size: clamp(40px, 8vw, 75px);
 }
 
 .about {
   position: relative;
   left: calc(20% - 100px);
   color: var(--color-primary);
-  padding-bottom: 500px;
+  padding-bottom: 250px;
+  padding-top: 250px;
+  display: flex;
 }
 
 .about p {
@@ -241,9 +230,7 @@ svg {
 
 .about .body {
   font-size: 18px;
-  color: var(--color-on-surface);
-  filter: brightness(0.65);
-  width: 80% !important;
+  color: var(--color-on-surface-2);
 }
 
 .about h1 {
@@ -256,21 +243,98 @@ svg {
   display: block;
   position: relative;
   top: -15px;
-  width: calc(69% - 150px);
+  width: calc(61%);
   height: 1px;
   margin-left: 180px;
-  background-color: var(--color-on-surface);
-}
-
-.about h2 {
-  color: var(--color-on-surface);
-  filter: brightness(0.65);
-  font-size: 60px;
+  background-color: var(--color-on-surface-2);
 }
 
 .about h3 {
-  /* color: var(--color-on-surface);
-  filter: brightness(0.65); */
+  font-size: 30px;
+}
+
+.contact a,
+.about a {
+  color: var(--color-secondary) !important;
+  text-decoration: none;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease-out;
+}
+
+.contact a:hover,
+.about a:hover {
+  background-size: 100% 2px;
+}
+
+.work {
+  position: relative;
+  left: calc(20% - 100px);
+  color: var(--color-primary);
+  padding-bottom: 250px;
+  padding-top: 250px;
+  display: flex;
+}
+
+.work p {
+  font-size: 20px;
+}
+
+.work .body {
+  font-size: 18px;
+  color: var(--color-on-surface-2);
+}
+
+.work h1 {
+  color: var(--color-on-surface);
+  font-size: 60px;
+}
+
+.work h3::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -15px;
+  width: calc(22%);
+  height: 1px;
+  margin-left: 255px;
+  background-color: var(--color-on-surface-2);
+}
+
+.work h3 {
+  font-size: 30px;
+}
+
+.contact {
+  position: relative;
+  left: calc(20% - 100px);
+  color: var(--color-primary);
+  padding-bottom: 450px;
+  padding-top: 250px;
+  display: flex;
+  padding-right: calc(20%);
+}
+
+.contact p {
+  font-size: 20px;
+  color: var(--color-secondary);
+  margin: 0 !important;
+}
+
+.contact .body {
+  font-size: 18px;
+  color: var(--color-on-surface-2);
+}
+
+.contact h1 {
+  color: var(--color-on-surface);
+  font-size: 60px;
+}
+
+.contact h3 {
   font-size: 30px;
 }
 
@@ -303,7 +367,7 @@ svg {
   height: 70px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 899px) {
   .line1 {
     visibility: hidden;
   }
@@ -335,16 +399,6 @@ a:not(.navbar *, .main-container *):hover {
   bottom: 10px;
 }
 
-.main-container a {
-  color: var(--color-primary);
-  bottom: 10px;
-}
-
-.main-container a:hover {
-  color: var(--color-primary);
-  filter: brightness(0.65);
-}
-
 /* stops the nav-brand*/
 a:not(.navbar *):hover svg path {
   stroke: var(--color-primary);
@@ -361,4 +415,118 @@ a:hover rect {
 
 a:hover circle {
   stroke: var(--color-primary);
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+  }
+
+  .navbar-expand-sm .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-sm .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-sm .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    transform: none !important;
+    transition: none;
+  }
+
+  .navbar-expand-sm .offcanvas .offcanvas-header {
+    display: none;
+  }
+
+  .navbar-expand-sm .offcanvas .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
+}
+
+@media (min-width: 454px) {
+  .navbar-expand-xs {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-xs .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-xs .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+
+  .navbar-expand-xs .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+  }
+
+  .navbar-expand-xs .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-expand-xs .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-xs .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-xs .offcanvas {
+    position: static;
+    z-index: auto;
+    flex-grow: 1;
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    transform: none !important;
+    transition: none;
+  }
+
+  .navbar-expand-xs .offcanvas .offcanvas-header {
+    display: none;
+  }
+
+  .navbar-expand-xs .offcanvas .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
 }

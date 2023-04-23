@@ -1,14 +1,13 @@
-import React from 'react';
-import '../src/App.css';
-// import petUniverseHome from './projects/pet-universe/home.png';
-// import petUniverseVideo from './projects/pet-universe/video.mp4';
+import React from 'react'
+import '../src/App.css'
 import NavBar from './sections/NavBar'
 import Intro from './sections/Intro'
 import About from './sections/About'
-import LinkedinIcon from './icons/LinkedinIcon';
-import GithubIcon from './icons/GithubIcon';
-import MailIcon from './icons/MailIcon';
-
+import Work from './sections/Work'
+import Contact from './sections/Contact'
+import LinkedinIcon from './icons/LinkedinIcon'
+import GithubIcon from './icons/GithubIcon'
+import MailIcon from './icons/MailIcon'
 
 function App() {
   return (
@@ -27,13 +26,10 @@ function App() {
         </a>
       </span>
       <div className="main-container">
-
-        {/* <div className="line2" />
-      <a href="mailto:trevorpdrayton@gmail.com" target="_blank">
-        <span className="line2-text">trevorpdrayton@gmail.com</span>
-      </a> */}
         <Intro></Intro>
         <About></About>
+        <Work></Work>
+        <Contact></Contact>
       </div>
     </div>
   )

@@ -27,9 +27,9 @@ const About = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Thompson Rivers University
+                        Thompson Rivers University.
                     </a>
-                    &nbsp;in Kamloops, British Columbia, Canada.&nbsp;
+                    &nbsp;in Kamloops, British Columbia, Canada. I'm graduating in April 2024.&nbsp;
                 </p>
                 <p className="body">
                     I have 8 months of full stack development experience from a co-op at&nbsp;

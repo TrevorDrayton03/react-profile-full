@@ -18,7 +18,7 @@ On Error:         #FFFFFF
 
 :root {
   --color-primary: #BB86FC;
-  --color-primary-variant: #3700B3;
+  --color-primary-variant: #7C6BF2;
   --color-primary-variant-2: #1A0080;
   --color-primary-variant-3: #211653;
   --color-secondary: #03DAC6;
@@ -63,7 +63,7 @@ On Error:         #FFFFFF
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 3s ease-in-out;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -299,7 +299,7 @@ svg {
   display: block;
   position: relative;
   top: -15px;
-  width: calc(22%);
+  width: calc(28%);
   height: 1px;
   margin-left: 255px;
   background-color: var(--color-on-surface-2);
@@ -602,8 +602,58 @@ img:hover {
 .project {
   position: relative;
   left: calc(20% - 100px);
-  color: var(--color-primary);
+  color: var(--color-on-surface-2);
   padding-bottom: 250px;
   /* padding-top: 250px; */
+  margin-top: -100px;
   display: flex;
+  flex-direction: column;
+}
+
+/* .project p {
+  font-size: 20px;
+} */
+
+/* .project .body {
+  font-size: 18px;
+  color: var(--color-on-surface-2);
+  max-width: 540px;
+} */
+
+.project h1 {
+  color: var(--color-on-surface);
+  font-size: clamp(40px, 8vw, 75px);
+}
+
+.project h2 {
+  /* color: var(--color-on-surface); */
+  color: var(--color-primary);
+
+  font-size: clamp(30px, 8vw, 50px);
+}
+
+.project h3 {
+  color: var(--color-on-surface-2);
+  /* color: var(--color-on-surface); */
+  /* font-size: clamp(30px, 8vw, 50px); */
+}
+
+.project h4 {
+  color: var(--color-primary-variant);
+  /* font-size: clamp(30px, 8vw, 50px); */
+}
+
+/* .project a h1 {
+  color: var(--color-secondary) !important;
+  text-decoration: none !important;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease-out;
+} */
+
+.project h1 a:hover {
+  color: var(--color-primary) !important;
 }

@@ -8,11 +8,12 @@ const Work = ({ projectClick }) => {
     const handleClick = (event) => {
         event.preventDefault();
         projectClick("/pet-universe");
+        window.scrollTo(0, 0); // scroll to the top of the page
     };
     return (
         <div className="work row" id="work">
             <h3>Work I've Done</h3>
-            <div className='row'>
+            <div className='row work-project'>
                 <div className="col">
                     <Card>
                         <a
@@ -24,14 +25,21 @@ const Work = ({ projectClick }) => {
                         <Card.Body>
                             <Card.Title>
                                 <a
-                                    href="/#"
+                                    href="/pet-universe"
+                                    onClick={handleClick}
                                 >
                                     Pet Universe
                                 </a>
                             </Card.Title>
                             <Card.Text>
-                                Full-stack web application with MERN.
+                                Full-stack MERN web application.
                             </Card.Text>
+                            <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
+                                <GithubIcon title="Pet Universe Github Repo" />
+                            </a>
+                            <a href="https://online-pet-store.netlify.app/" target="_blank" alt="Pet Universe Netlify External Link">
+                                <ExternalIcon title="Pet Universe External Link" />
+                            </a>
                         </Card.Body>
                         {/* <ListGroup className="list-group-flush">
                             <ListGroup.Item>MongoDB, Express.js, Node.js, React.js</ListGroup.Item>
@@ -57,7 +65,7 @@ const Work = ({ projectClick }) => {
                     </Card>
                 </div>
 
-                <div className="col">
+                {/* <div className="col">
                     <Card>
                         <a
                             href="/pet-universe"
@@ -76,12 +84,12 @@ const Work = ({ projectClick }) => {
                                 Full-stack web application with MERN.
                             </Card.Text>
                         </Card.Body>
-                        {/* <ListGroup className="list-group-flush">
+                        <ListGroup className="list-group-flush">
                             <ListGroup.Item>MongoDB, Express.js, Node.js, React.js</ListGroup.Item>
                             <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
                             <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                        </ListGroup> */}
-                        {/* <Card.Body>
+                        </ListGroup>
+                        <Card.Body>
                             <Card.Link
                                 href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store"
                                 target="_blank"
@@ -96,10 +104,10 @@ const Work = ({ projectClick }) => {
                             >
                                 <ExternalIcon />
                             </Card.Link>
-                        </Card.Body> */}
+                        </Card.Body>
                     </Card>
-                </div>
-            </div>
+                </div> */}
+                {/* </div>
             <div className='row' style={{ marginTop: '30px' }}>
                 <div className="col">
                     <Card>
@@ -142,7 +150,7 @@ const Work = ({ projectClick }) => {
                             <Card.Link href="#">External</Card.Link>
                         </Card.Body>
                     </Card>
-                </div>
+                </div> */}
             </div>
         </div>
     );

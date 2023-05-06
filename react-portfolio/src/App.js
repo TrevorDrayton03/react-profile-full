@@ -46,7 +46,7 @@ function App() {
           <LinkedinIcon />
         </a>
         <a href="https://github.com/TrevorDrayton03" target="_blank">
-          <GithubIcon />
+          <GithubIcon title="Trevor Drayton's Github Repo" />
         </a>
         <a href="mailto:trevorpdrayton@gmail.com" target="_blank">
           <MailIcon />

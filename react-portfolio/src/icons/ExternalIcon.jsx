@@ -1,6 +1,6 @@
 import React from "react";
 
-function ExternalIcon() {
+function ExternalIcon({ title }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -11,10 +11,11 @@ function ExternalIcon() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            // class="feather feather-external-link"
-            // height="50%"
-            // width="50%"
-        ><title>External Link</title>
+        // class="feather feather-external-link"
+        // height="50%"
+        // width="50%"
+        >
+            <title>{title}</title>
             <path
                 d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
             </path>

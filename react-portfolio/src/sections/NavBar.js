@@ -7,6 +7,7 @@ const NavBar = ({ scrollToSection, brandClick }) => {
     const [isHide, setisHide] = useState(false);
     const handleBrandClick = (event, route) => {
         event.preventDefault();
+        window.scrollTo(0, 0);
         brandClick(route);
     };
 

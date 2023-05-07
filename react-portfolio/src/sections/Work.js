@@ -37,7 +37,7 @@ const Work = ({ projectClick }) => {
                             <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
                                 <GithubIcon title="Pet Universe Github Repo" />
                             </a>
-                            <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe Netlify External Link">
+                            <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe External Link">
                                 <ExternalIcon title="Pet Universe External Link" />
                             </a>
                         </Card.Body>
@@ -57,7 +57,7 @@ const Work = ({ projectClick }) => {
                             <Card.Link
                                 href="#"
                                 target="_blank"
-                                alt="Pet Universe Netlify"
+                                alt="Pet Universe"
                             >
                                 <ExternalIcon />
                             </Card.Link>
@@ -100,7 +100,7 @@ const Work = ({ projectClick }) => {
                             <Card.Link
                                 href="#"
                                 target="_blank"
-                                alt="Pet Universe Netlify"
+                                alt="Pet Universe"
                             >
                                 <ExternalIcon />
                             </Card.Link>

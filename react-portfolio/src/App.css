@@ -276,7 +276,7 @@ svg {
   left: calc(20% - 100px);
   color: var(--color-primary);
   padding-bottom: 250px;
-  padding-top: 250px;
+  padding-top: 125px;
   display: flex;
 }
 

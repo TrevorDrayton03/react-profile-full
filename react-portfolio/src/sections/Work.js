@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup'
 import ExternalIcon from '../icons/ExternalIcon';
 import GithubIcon from '../icons/GithubIcon';
+import DocumentationIcon from '../icons/DocumentationIcon'
 
 const Work = ({ projectClick }) => {
     const handleClick = (event) => {
@@ -34,12 +35,17 @@ const Work = ({ projectClick }) => {
                             <Card.Text>
                                 Full-stack MERN web application.
                             </Card.Text>
-                            <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
-                                <GithubIcon title="Pet Universe Github Repo" />
-                            </a>
-                            <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe External Link">
-                                <ExternalIcon title="Pet Universe External Link" />
-                            </a>
+                            <div>
+                                <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
+                                    <GithubIcon title="Pet Universe Github Repo" />
+                                </a>
+                                <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe External Link">
+                                    <ExternalIcon title="Pet Universe External Link" />
+                                </a>
+                                <a href="https://pet-universe-docs.netlify.app/" target="_blank" alt="Pet Universe External Link">
+                                    <DocumentationIcon title="Pet Universe Docs External Link" />
+                                </a>
+                            </div>
                         </Card.Body>
                         {/* <ListGroup className="list-group-flush">
                             <ListGroup.Item>MongoDB, Express.js, Node.js, React.js</ListGroup.Item>

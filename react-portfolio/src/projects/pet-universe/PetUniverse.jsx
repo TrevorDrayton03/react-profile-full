@@ -1,5 +1,6 @@
 import ExternalIcon from '../../icons/ExternalIcon';
 import GithubIcon from '../../icons/GithubIcon';
+import DocumentationIcon from '../../icons/DocumentationIcon';
 
 const PetUniverse = () => {
     return (
@@ -10,13 +11,17 @@ const PetUniverse = () => {
                 >
                     Pet Universe
                 </a>
-                <div style={{ paddingLeft: '20px', width: '100px', height: '40px', display: 'flex', flexDirection: 'row' }}>
+                <div style={{ paddingTop: '10px', paddingLeft: '20px', width: '150px', height: '40px', display: 'flex', flexDirection: 'row' }}>
                     <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
                         <GithubIcon title="Pet Universe Github Repo" />
                     </a>
                     <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe External Link">
                         <ExternalIcon title="Pet Universe External Link" />
                     </a>
+                    <a href="https://pet-universe-docs.netlify.app/" target="_blank" alt="Pet Universe External Link">
+                        <DocumentationIcon title="Pet Universe Docs External Link" />
+                    </a>
+                    {/* https://pet-universe-docs.netlify.app/ */}
                 </div>
             </h1>
             <div>

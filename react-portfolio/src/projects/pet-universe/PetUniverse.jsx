@@ -5,7 +5,7 @@ const PetUniverse = () => {
     return (
         <div className="project" >
             <h1 style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'baseline' }}>
-                <a href="https://online-pet-store.netlify.app/" target="_blank" alt="Pet Universe Github Repo"
+                <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe Github Repo"
                     style={{ color: 'inherit', textDecoration: 'none' }}
                 >
                     Pet Universe
@@ -14,7 +14,7 @@ const PetUniverse = () => {
                     <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
                         <GithubIcon title="Pet Universe Github Repo" />
                     </a>
-                    <a href="https://online-pet-store.netlify.app/" target="_blank" alt="Pet Universe Netlify External Link">
+                    <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe Netlify External Link">
                         <ExternalIcon title="Pet Universe External Link" />
                     </a>
                 </div>

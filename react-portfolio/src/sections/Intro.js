@@ -5,7 +5,7 @@ const Intro = () => {
             <h1>Trevor Drayton.</h1>
             <h2 style={{ marginBottom: '20px' }}>I produce high quality software.</h2>
             <p className="body">
-                My goal is to work on products that make a positive impact on the people and world around us.
+                My goal is to work on projects that make a positive impact on the people and world around us.
             </p>
         </div>
     );

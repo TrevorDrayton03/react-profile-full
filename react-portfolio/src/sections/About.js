@@ -7,11 +7,10 @@ const About = () => {
                 <h3>About Me</h3>
                 <p className="body">
                     I take pride in producing high-quality software.
-                    I apply the engineering method to produce software that follows the principles of software engineering;
-                    ensuring that software is reliable, maintainable, scalable, secure, and easy to use.
+                    I apply the engineering method to produce software that follows software engineering principles.
                 </p>
                 <p className="body">
-                    I am a student in the&nbsp;
+                    I am graduating in April 2024 from the&nbsp;
                     <a
                         href="https://www.tru.ca/science/programs/engineering/software-engineering.html"
                         alt="Software Engineering"
@@ -29,7 +28,7 @@ const About = () => {
                     >
                         Thompson Rivers University
                     </a>
-                    &nbsp;in Kamloops, British Columbia, Canada. I'm graduating in April 2024.&nbsp;
+                    &nbsp;in Kamloops, British Columbia, Canada.&nbsp;
                 </p>
                 <p className="body">
                     I have 8 months of full stack development experience from a co-op at&nbsp;
@@ -42,6 +41,10 @@ const About = () => {
                         Traqspera Technologies
                     </a>
                     &nbsp;in Kamloops.
+                </p>
+                <p className="body">
+                    I am currently doing a summer co-op at Thompson Rivers University as an Information Security Analyst.
+                    &nbsp;
                 </p>
             </div>
             <div className="col" style={{ justifyContent: 'center', display: 'flex' }}>

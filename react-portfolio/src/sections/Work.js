@@ -35,7 +35,7 @@ const Work = ({ projectClick }) => {
                             <Card.Text>
                                 Full-stack MERN web application.
                             </Card.Text>
-                            <div>
+                            {/* <div>
                                 <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
                                     <GithubIcon title="Pet Universe Github Repo" />
                                 </a>
@@ -45,7 +45,7 @@ const Work = ({ projectClick }) => {
                                 <a href="https://pet-universe-docs.netlify.app/" target="_blank" alt="Pet Universe External Link">
                                     <DocumentationIcon title="Pet Universe Docs External Link" />
                                 </a>
-                            </div>
+                            </div> */}
                         </Card.Body>
                         {/* <ListGroup className="list-group-flush">
                             <ListGroup.Item>MongoDB, Express.js, Node.js, React.js</ListGroup.Item>

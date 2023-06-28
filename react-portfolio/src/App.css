@@ -368,7 +368,7 @@ svg {
   height: 70px;
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1150px) {
   .line1 {
     visibility: hidden;
   }
@@ -378,7 +378,7 @@ svg {
   }
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:1150px) {
   .App {
     display: flex;
     flex: 1;
@@ -626,8 +626,8 @@ img:hover {
 }
 
 .project h2 {
-  /* color: var(--color-on-surface); */
-  color: var(--color-primary);
+  color: var(--color-on-surface-2);
+  /* color: var(--color-primary); */
 
   font-size: clamp(30px, 8vw, 50px);
 }
@@ -639,8 +639,10 @@ img:hover {
 }
 
 .project h4 {
-  color: var(--color-primary-variant);
+  /* color: var(--color-primary-variant); */
+  color: var(--color-primary);
   /* font-size: clamp(30px, 8vw, 50px); */
+  padding-top:10px;
 }
 
 /* .project a h1 {

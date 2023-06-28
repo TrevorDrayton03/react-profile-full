@@ -24,6 +24,7 @@ const PetUniverse = () => {
                     {/* https://pet-universe-docs.netlify.app/ */}
                 </div>
             </h1>
+            <p><em>Psst.. use 'trevor' for the username and password to manipulate the site from the admin page! Also, first instance of the day can be slow to start up.</em></p>
             <div>
                 <h2>Design Requirements</h2>
                 <h4>

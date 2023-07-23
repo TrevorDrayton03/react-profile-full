@@ -9,6 +9,7 @@ import LinkedinIcon from './icons/LinkedinIcon'
 import GithubIcon from './icons/GithubIcon'
 import MailIcon from './icons/MailIcon'
 import PetUniverse from "./projects/pet-universe/PetUniverse";
+import IntervalTimer from "./projects/interval-timer/IntervalTimer";
 
 function App() {
   const [route, setRoute] = useState(window.location.pathname)
@@ -57,7 +58,12 @@ function App() {
           <PetUniverse backClick={handleRouteClick}></PetUniverse>
         </div>
       }
-      {route !== "/pet-universe" &&
+      {route === "/interval-timer" &&
+        <div className="main-container">
+          <IntervalTimer backClick={handleRouteClick}></IntervalTimer>
+        </div>
+      }
+      {route !== "/pet-universe" && route !== "/interval-timer" &&
         <div className="main-container">
           <Intro></Intro>
           <About></About>

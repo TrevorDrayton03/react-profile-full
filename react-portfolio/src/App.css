@@ -301,7 +301,7 @@ svg {
   top: -15px;
   width: calc(28%);
   height: 1px;
-  margin-left: 255px;
+  margin-left: 280px;
   background-color: var(--color-on-surface-2);
 }
 
@@ -316,7 +316,7 @@ svg {
   padding-bottom: 450px;
   padding-top: 250px;
   display: flex;
-  padding-right: calc(20%);
+  padding-right: calc(10%);
 }
 
 .contact p {
@@ -343,7 +343,7 @@ svg {
   position: absolute;
   top: 250px;
   padding-right: 30px;
-  max-width: 1000px;
+  max-width: 900px;
   padding-left: 50px;
 }
 
@@ -369,6 +369,10 @@ svg {
 }
 
 @media only screen and (max-width: 1150px) {
+  .main-container {
+    width: 90%;
+  }
+
   .line1 {
     visibility: hidden;
   }
@@ -540,6 +544,7 @@ a:hover line {
   background-color: var(--color-on-background-2) !important;
   /* border-color: var(--color-primary) !important; */
   padding: 5px !important;
+  /* height: 100% !important; */
 }
 
 .list-group-item {
@@ -573,10 +578,13 @@ a:hover line {
   text-align: center !important;
 }
 
-/* .card-img-top {
-  opacity: 0.7 !important;
+.card-img-top {
+  /* width: 300px !important; 
+  height: 200px !important; */
+  object-fit: cover !important;
 }
 
+/*
 .card-img-top:hover {
   opacity: 1.0 !important;
 } */
@@ -608,6 +616,7 @@ img:hover {
   margin-top: -100px;
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 /* .project p {
@@ -642,7 +651,7 @@ img:hover {
   /* color: var(--color-primary-variant); */
   color: var(--color-primary);
   /* font-size: clamp(30px, 8vw, 50px); */
-  padding-top:10px;
+  padding-top: 10px;
 }
 
 /* .project a h1 {

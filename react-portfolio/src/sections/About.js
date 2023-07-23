@@ -5,10 +5,10 @@ const About = () => {
         <div className="about row" id="about">
             <div className="col">
                 <h3>About Me</h3>
-                <p className="body">
+                {/* <p className="body">
                     I take pride in producing high-quality software.
                     I apply the engineering method to produce software that follows software engineering principles.
-                </p>
+                </p> */}
                 <p className="body">
                     I am graduating in April 2024 from the&nbsp;
                     <a
@@ -31,7 +31,7 @@ const About = () => {
                     &nbsp;in Kamloops, British Columbia, Canada.&nbsp;
                 </p>
                 <p className="body">
-                    I have 8 months of full stack development experience from a co-op at&nbsp;
+                    I have full stack development experience from an 8 month co-op at&nbsp;
                     <a
                         href="https://www.traqspera.com/"
                         alt="Traqspera Technologies"
@@ -43,7 +43,7 @@ const About = () => {
                     &nbsp;in Kamloops.
                 </p>
                 <p className="body">
-                    I am currently doing a summer co-op at Thompson Rivers University as an Information Security Analyst.
+                    I am developing software for Thompson Rivers University's Information Security department for the summer (co-op).
                     &nbsp;
                 </p>
             </div>

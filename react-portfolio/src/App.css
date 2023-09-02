@@ -555,6 +555,11 @@ a:hover line {
 .card-title {
   color: var(--color-on-surface) !important;
   text-align: center !important;
+  font-size: 22px !important;
+}
+
+.card-text {
+  font-size: 16px !important;
 }
 
 .card-title a {
@@ -576,6 +581,12 @@ a:hover line {
 .card-body {
   color: var(--color-on-surface-2) !important;
   text-align: center !important;
+  margin: 0px !important;
+  padding: 10px 5px 5px 5px !important;
+}
+
+.list-group-item {
+  padding: 5px !important;
 }
 
 .card-img-top {

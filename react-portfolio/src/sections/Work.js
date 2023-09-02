@@ -1,31 +1,109 @@
-import PetUniverse from '../projects/pet-universe/home2.png'
-import IntervalTimer from '../projects/interval-timer/feature2.png'
+import PetUniverse from '../res/img/home2.png'
+import IntervalTimer from '../res/img/feature2.png'
+import PhysicsSimulator from '../res/img/physsim.png'
+import HybridWorkFromHome from '../res/img/frontpg.png'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup'
 import ExternalIcon from '../icons/ExternalIcon';
 import GithubIcon from '../icons/GithubIcon';
 import DocumentationIcon from '../icons/DocumentationIcon'
 
-const Work = ({ projectClick }) => {
-    const handlePetUniverseClick = (event) => {
-        event.preventDefault();
-        projectClick("/pet-universe");
-        window.scrollTo(0, 0);
-    };
-    const handleIntervalTimerClick = (event) => {
-        event.preventDefault();
-        projectClick("/interval-timer");
-        window.scrollTo(0, 0);
-    };
+const Work = ({ }) => {
     return (
         <div className="work row" id="work">
             <h3>Projects I've Done</h3>
             <div className='row work-project'>
-                <div className="col" style={{ display: 'flex' }}>
+                <div className="col" style={{ display: 'flex', padding: '10px' }}>
                     <Card>
                         <a
-                            href="/pet-universe"
-                            onClick={handlePetUniverseClick}
+                            href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
+                            target="_blank"
+                            rel="noreferrer"
+                            alt="Hybrid Work Security Assessment Github"
+                        >
+                            <div>
+                                <Card.Img variant="top" src={HybridWorkFromHome} />
+                            </div>
+                        </a>
+                        <Card.Body>
+                            <Card.Title>
+                                <a
+                                    href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Hybrid Work Security Assessment Github"
+                                >
+                                    Hybrid Work Security Assessment
+                                </a>
+                            </Card.Title>
+                            <Card.Text>
+                                Web Application and Integration
+                            </Card.Text>
+                        </Card.Body>
+                        <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
+                            <ListGroup.Item>
+                                <a
+                                    href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Hybrid Work Security Assessment Github"
+                                >
+                                    <GithubIcon title="GitHub" />
+                                </a>
+                            </ListGroup.Item>
+                            <ListGroup.Item><em>M(ariaDB)ERN, Apache, Linux, Ethical Hacking</em></ListGroup.Item>
+                        </ListGroup>
+                    </Card>
+                </div>
+                <div className="col" style={{ display: 'flex', padding: '10px' }}>
+                    <Card className="card d-flex flex-column">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=intevraltime0311.myapp"
+                            target="_blank"
+                            rel="noreferrer"
+                            alt="Interval Timer Play Store Page"
+                        >
+                            <Card.Img variant="top" src={IntervalTimer} />
+                        </a>
+                        <Card.Body className="d-flex flex-column justify-content-start align-items-center">
+                            <Card.Title>
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=intevraltime0311.myapp"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Interval Timer Play Store Page"
+                                >
+                                    Interval Timer
+                                </a>
+                            </Card.Title>
+                            <Card.Text>
+                                Android Application
+                            </Card.Text>
+                        </Card.Body>
+                        <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
+                            <ListGroup.Item>
+                                <a href="https://github.com/TrevorDrayton03/Interval-Timer" target="_blank"
+                                rel="noreferrer" alt="Interval Timer Github Repo">
+                                    <GithubIcon title="GitHub" />
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=intevraltime0311.myapp" target="_blank"
+                                rel="noreferrer" alt="Interval Timer Play Store Page">
+                                    <ExternalIcon title="Google Play Store" />
+                                </a>
+                            </ListGroup.Item>
+                            <ListGroup.Item><em>React Native, Expo</em></ListGroup.Item>
+                        </ListGroup>
+                    </Card>
+                </div>
+            </div>
+            <div className='row work-project'>
+                <div className="col" style={{ display: 'flex', padding: '10px' }}>
+                <Card>
+                        <a
+                            href="https://pet-universe.onrender.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            alt="Pet Universe External Link"
                         >
                             <div>
                                 <Card.Img variant="top" src={PetUniverse} />
@@ -34,73 +112,92 @@ const Work = ({ projectClick }) => {
                         <Card.Body>
                             <Card.Title>
                                 <a
-                                    href="/pet-universe"
-                                    onClick={handlePetUniverseClick}
+                                    href="https://pet-universe.onrender.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Pet Universe External Link"
                                 >
                                     Pet Universe
                                 </a>
                             </Card.Title>
                             <Card.Text>
-                                MERN Web Application
+                                Web Application
                             </Card.Text>
-                            {/* <div>
-                                <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank" alt="Pet Universe Github Repo">
-                                    <GithubIcon title="Pet Universe Github Repo" />
+                        </Card.Body>
+                        <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
+                            <ListGroup.Item>
+                                <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank"
+                                rel="noreferrer" alt="Pet Universe Github Repo">
+                                    <GithubIcon title="GitHub" />
                                 </a>
-                                <a href="https://pet-universe.onrender.com/" target="_blank" alt="Pet Universe External Link">
+                                <a href="https://pet-universe.onrender.com/" target="_blank"
+                                rel="noreferrer" alt="Pet Universe External Link">
                                     <ExternalIcon title="Pet Universe External Link" />
                                 </a>
-                                <a href="https://pet-universe-docs.netlify.app/" target="_blank" alt="Pet Universe External Link">
-                                    <DocumentationIcon title="Pet Universe Docs External Link" />
+                                <a href="https://pet-universe-docs.netlify.app/" target="_blank"
+                                rel="noreferrer" alt="Pet Universe External Link">
+                                    <DocumentationIcon title="JSDoc Generated Documentation" />
                                 </a>
-                            </div> */}
-                        </Card.Body>
-                        {/* <ListGroup className="list-group-flush">
-                            <ListGroup.Item>MongoDB, Express.js, Node.js, React.js</ListGroup.Item>
-                            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                        </ListGroup> */}
-                        {/* <Card.Body>
-                            <Card.Link
-                                href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store"
-                                target="_blank"
-                                alt="Pet Universe Github"
-                            >
-                                <GithubIcon />
-                            </Card.Link>
-                            <Card.Link
-                                href="#"
-                                target="_blank"
-                                alt="Pet Universe"
-                            >
-                                <ExternalIcon />
-                            </Card.Link>
-                        </Card.Body> */}
+                            </ListGroup.Item>
+                            <ListGroup.Item><em>M(ongoDB)ERN, JSDoc</em></ListGroup.Item>
+                        </ListGroup>
                     </Card>
                 </div>
-                <div className="col" style={{ display: 'flex' }}>
-                    <Card className="card d-flex flex-column">
+                <div className="col" style={{ display: 'flex', padding: '10px' }}>
+                    <Card>
                         <a
-                            href="interval-timer"
-                            onClick={handleIntervalTimerClick}
+                            href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576"
+                            target="_blank"
+                            rel="noreferrer"
+                            alt="Physics Simulator"
                         >
-                            <Card.Img variant="top" src={IntervalTimer} />
+                            <div>
+                                <Card.Img variant="top" src={PhysicsSimulator} />
+                            </div>
                         </a>
-                        <Card.Body className="d-flex flex-column justify-content-end align-items-center">
+                        <Card.Body>
                             <Card.Title>
                                 <a
-                                    href="/interval-timer"
-                                    onClick={handleIntervalTimerClick}
+                                    href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Physics Simulator"
                                 >
-                                    Interval Timer
+                                    Physics Simulator
                                 </a>
                             </Card.Title>
                             <Card.Text>
-                                Expo Mobile Application
+                                Testing & Verification, DevOps
                             </Card.Text>
                         </Card.Body>
+                        <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
+                            <ListGroup.Item>
+                                <a
+                                    href="https://github.com/TrevorDrayton03/SENG-4110-Physics-Simulator"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    alt="Physics Simulator"
+                                >
+                                    <GithubIcon title="GitHub" />
+                                </a>
+                                <a href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576" target="_blank"
+                                rel="noreferrer" alt="Physics Simulator Gitlab Pipeline">
+                                    <ExternalIcon title="GitLab Pipeline" />
+                                </a>
+                                <a href="https://github.com/TrevorDrayton03/SENG-4110-Physics-Simulator/blob/main/docs/testing.md" target="_blank"
+                                rel="noreferrer" alt="Physics Simulator Testing.md">
+                                    <DocumentationIcon title="Testing.MD" />
+                                </a>
+                            </ListGroup.Item>
+                            <ListGroup.Item><em>C++, Docker, Doxygen, CI/CD, Google Test</em></ListGroup.Item>
+                        </ListGroup>
                     </Card>
                 </div>
+                {/* <div className="col" style={{ display: 'flex', padding: '10px', visibility: "hidden" }}>
+                    <Card className="card d-flex flex-column" style={{ visibility: "hidden" }}>
+                        {null}
+                    </Card>
+                </div> */}
             </div>
         </div>
     );

@@ -8,8 +8,6 @@ import Contact from './sections/Contact'
 import LinkedinIcon from './icons/LinkedinIcon'
 import GithubIcon from './icons/GithubIcon'
 import MailIcon from './icons/MailIcon'
-import PetUniverse from "./projects/pet-universe/PetUniverse";
-import IntervalTimer from "./projects/interval-timer/IntervalTimer";
 
 function App() {
   const [route, setRoute] = useState(window.location.pathname)
@@ -53,24 +51,12 @@ function App() {
           <MailIcon />
         </a>
       </span>
-      {route === "/pet-universe" &&
-        <div className="main-container">
-          <PetUniverse backClick={handleRouteClick}></PetUniverse>
-        </div>
-      }
-      {route === "/interval-timer" &&
-        <div className="main-container">
-          <IntervalTimer backClick={handleRouteClick}></IntervalTimer>
-        </div>
-      }
-      {route !== "/pet-universe" && route !== "/interval-timer" &&
-        <div className="main-container">
-          <Intro></Intro>
-          <About></About>
-          <Work projectClick={handleRouteClick}></Work>
-          <Contact></Contact>
-        </div>
-      }
+      <div className="main-container">
+        <Intro></Intro>
+        <About></About>
+        <Work></Work>
+        <Contact></Contact>
+      </div>
     </div>
   )
 }

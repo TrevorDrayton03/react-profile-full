@@ -12,7 +12,7 @@ const Work = ({ }) => {
     return (
         <div className="work row" id="work">
             <h3>Projects I've Done</h3>
-            <div className='row work-project'>
+            <div className='row'>
                 <div className="col" style={{ display: 'flex', padding: '10px' }}>
                     <Card>
                         <a
@@ -51,7 +51,7 @@ const Work = ({ }) => {
                                     <GithubIcon title="GitHub" />
                                 </a>
                             </ListGroup.Item>
-                            <ListGroup.Item><em>M(ariaDB)ERN, Apache, Linux, Ethical Hacking</em></ListGroup.Item>
+                            <ListGroup.Item><em>M(ariaDB)ERN, Apache, Linux, Burp</em></ListGroup.Item>
                         </ListGroup>
                     </Card>
                 </div>
@@ -96,7 +96,7 @@ const Work = ({ }) => {
                     </Card>
                 </div>
             </div>
-            <div className='row work-project'>
+            <div className='row'>
                 <div className="col" style={{ display: 'flex', padding: '10px' }}>
                 <Card>
                         <a

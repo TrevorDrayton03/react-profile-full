@@ -53,14 +53,6 @@ On Error:         #FFFFFF
   background: var(--color-secondary-2);
 }
 
-/* .App {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
@@ -80,14 +72,15 @@ On Error:         #FFFFFF
 body {
   font-family: 'Ubuntu', sans-serif !important;
   font-size: 17px;
-  padding: 20px;
+  padding: 30px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-background) !important;
-  min-width: 200px
+  min-width: 200px;
+  zoom:1.1;
 }
 
-/* prevent horizontal scrollingF */
+/* prevent horizontal scrolling */
 body,
 html {
   overflow-x: hidden;
@@ -97,6 +90,14 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -112,8 +113,7 @@ html {
 
 .navbar {
   background-color: var(--color-background) !important;
-  padding-left: 30px !important;
-  padding-top: 30px !important;
+  padding: 30px 30px 10px 30px !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -190,8 +190,6 @@ svg {
 }
 
 .intro {
-  position: relative;
-  left: calc(20% - 100px);
   color: var(--color-primary);
   padding-bottom: 300px;
 }
@@ -203,26 +201,24 @@ svg {
 .intro .body {
   font-size: 18px;
   color: var(--color-on-surface-2);
-  max-width: 540px;
 }
 
 .intro h1 {
   color: var(--color-on-surface);
-  font-size: clamp(40px, 8vw, 75px);
+  font-size: clamp(30px, 8vw, 75px);
 }
 
 .intro h2 {
   color: var(--color-on-surface-2);
-  font-size: clamp(40px, 8vw, 75px);
+  font-size: clamp(30px, 8vw, 75px);
 }
 
 .about {
-  position: relative;
-  left: calc(20% - 100px);
   color: var(--color-primary);
   padding-bottom: 250px;
   padding-top: 250px;
   display: flex;
+  flex:1;
 }
 
 .about p {
@@ -272,11 +268,9 @@ svg {
 }
 
 .work {
-  position: relative;
-  left: calc(20% - 100px);
   color: var(--color-primary);
   padding-bottom: 250px;
-  padding-top: 125px;
+  padding-top: 250px;
   display: flex;
 }
 
@@ -299,9 +293,9 @@ svg {
   display: block;
   position: relative;
   top: -15px;
-  width: calc(28%);
+  width: calc(23%);
   height: 1px;
-  margin-left: 280px;
+  margin-left: 300px;
   background-color: var(--color-on-surface-2);
 }
 
@@ -310,13 +304,10 @@ svg {
 }
 
 .contact {
-  position: relative;
-  left: calc(20% - 100px);
   color: var(--color-primary);
   padding-bottom: 450px;
   padding-top: 250px;
   display: flex;
-  padding-right: calc(10%);
 }
 
 .contact p {
@@ -340,11 +331,11 @@ svg {
 }
 
 .main-container {
-  position: absolute;
-  top: 250px;
-  padding-right: 30px;
+  display:flex;
+  flex-direction: column;
+  margin-top: 250px;
   max-width: 900px;
-  padding-left: 50px;
+  width: 100%;
 }
 
 .line1 {
@@ -369,26 +360,12 @@ svg {
 }
 
 @media only screen and (max-width: 1150px) {
-  .main-container {
-    width: 90%;
-  }
-
   .line1 {
     visibility: hidden;
   }
 
   .line1-text {
     visibility: hidden;
-  }
-}
-
-@media only screen and (min-width:1150px) {
-  .App {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -542,9 +519,7 @@ a:hover line {
 
 .card {
   background-color: var(--color-on-background-2) !important;
-  /* border-color: var(--color-primary) !important; */
   padding: 5px !important;
-  /* height: 100% !important; */
 }
 
 .list-group-item {
@@ -565,16 +540,9 @@ a:hover line {
 .card-title a {
   color: var(--color-on-surface) !important;
   text-decoration: none !important;
-  /* padding-bottom: 2px;
-  background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 0% 2px;
-  transition: background-size 0.3s ease-out; */
 }
 
 .card-title a:hover {
-  /* background-size: 100% 2px; */
   color: var(--color-primary) !important;
 }
 
@@ -585,20 +553,33 @@ a:hover line {
   padding: 10px 5px 5px 5px !important;
 }
 
+.row {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.col:not(.aboutme) {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme{
+  align-self: flex-start !important;
+}
+
+.col h3 {
+  align-items: center !important;
+}
+
 .list-group-item {
   padding: 5px !important;
 }
 
 .card-img-top {
-  /* width: 300px !important; 
-  height: 200px !important; */
   object-fit: cover !important;
 }
-
-/*
-.card-img-top:hover {
-  opacity: 1.0 !important;
-} */
 
 img {
   opacity: 0.7 !important;
@@ -608,74 +589,33 @@ img:hover {
   opacity: 1.0 !important;
 }
 
-/* .card-link {
-  display: inline-block !important;
-} */
-
 .work svg {
   width: 30px;
   height: 30px;
   display: inline-block;
 }
 
-.project {
-  position: relative;
-  left: calc(20% - 100px);
-  color: var(--color-on-surface-2);
-  padding-bottom: 250px;
-  /* padding-top: 250px; */
-  margin-top: -100px;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  grid-gap: 20px; 
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+
 }
 
-/* .project p {
-  font-size: 20px;
-} */
-
-/* .project .body {
-  font-size: 18px;
-  color: var(--color-on-surface-2);
-  max-width: 540px;
-} */
-
-.project h1 {
-  color: var(--color-on-surface);
-  font-size: clamp(40px, 8vw, 75px);
+.card-content {
+  flex: 1; 
+  padding: 20px;
 }
 
-.project h2 {
-  color: var(--color-on-surface-2);
-  /* color: var(--color-primary); */
-
-  font-size: clamp(30px, 8vw, 50px);
-}
-
-.project h3 {
-  color: var(--color-on-surface-2);
-  /* color: var(--color-on-surface); */
-  /* font-size: clamp(30px, 8vw, 50px); */
-}
-
-.project h4 {
-  /* color: var(--color-primary-variant); */
-  color: var(--color-primary);
-  /* font-size: clamp(30px, 8vw, 50px); */
-  padding-top: 10px;
-}
-
-/* .project a h1 {
-  color: var(--color-secondary) !important;
-  text-decoration: none !important;
-  padding-bottom: 2px;
-  background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 0% 2px;
-  transition: background-size 0.3s ease-out;
-} */
-
-.project h1 a:hover {
-  color: var(--color-primary) !important;
+.card:hover {
+  transform: scale(1.05);
 }

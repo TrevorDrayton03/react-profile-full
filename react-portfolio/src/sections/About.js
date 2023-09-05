@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="about row" id="about">
             <div className="col">
-                <h3>About Me</h3>
+                <h3 className="aboutme" >1. About Me</h3>
                 {/* <p className="body">
                     I take pride in producing high-quality software.
                     I apply the engineering method to produce software that follows software engineering principles.

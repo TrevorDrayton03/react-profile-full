@@ -40,19 +40,19 @@ const NavBar = ({ scrollToSection, brandClick }) => {
                         href="#about"
                         onClick={(event) => handleLinkClick(event, "/about", "#about")}
                     >
-                        About
+                        1. About
                     </Nav.Link>
                     <Nav.Link
                         href="#work"
                         onClick={(event) => handleLinkClick(event, "/work", "#work")}
                     >
-                        Projects
+                        2. Projects
                     </Nav.Link>
                     <Nav.Link
                         href="#contact"
                         onClick={(event) => handleLinkClick(event, "/contact", "#contact")}
                     >
-                        Contact
+                        3. Contact
                     </Nav.Link>
                     {/* <Nav.Link href="#resume">Resume</Nav.Link> */}
                 </Nav>

@@ -38,19 +38,19 @@ const NavBar = ({ scrollToSection, brandClick }) => {
                 <Nav className="ms-auto">
                     <Nav.Link
                         href="#about"
-                        onClick={(event) => handleLinkClick(event, "/about", "#about")}
+                        onClick={(event) => handleLinkClick(event, "#about", "#about")}
                     >
                         1. About
                     </Nav.Link>
                     <Nav.Link
-                        href="#work"
-                        onClick={(event) => handleLinkClick(event, "/work", "#work")}
+                        href="#projects"
+                        onClick={(event) => handleLinkClick(event, "#projects", "#projects")}
                     >
                         2. Projects
                     </Nav.Link>
                     <Nav.Link
                         href="#contact"
-                        onClick={(event) => handleLinkClick(event, "/contact", "#contact")}
+                        onClick={(event) => handleLinkClick(event, "#contact", "#contact")}
                     >
                         3. Contact
                     </Nav.Link>

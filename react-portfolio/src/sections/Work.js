@@ -10,7 +10,7 @@ import DocumentationIcon from '../icons/DocumentationIcon'
 
 const Work = ({ }) => {
     return (
-        <div className="work row" id="work">
+        <div className="work row" id="projects">
             <h3>2. Projects I've Done</h3>
             <div className="card-container">
                 <Card>

@@ -138,6 +138,10 @@ html {
   padding-right: 30px !important;
 }
 
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
 .navbar-toggler {
   border-color: transparent !important;
   padding-right: 30px !important;
@@ -175,9 +179,9 @@ svg {
   position: relative;
 }
 
-.svg-container:hover {
+/* .svg-container:hover {
   filter: brightness(0.7);
-}
+} */
 
 .logo-text {
   position: absolute;
@@ -359,7 +363,40 @@ svg {
   height: 70px;
 }
 
-@media only screen and (max-width: 1150px) {
+.line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.line2-text {
+  font-size: 16px;
+  color: var(--color-on-surface);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  padding: 5px;
+}
+
+.line2-text a {
+  height: 40px;
+  width: 40px;
+  transition:none;
+}
+
+.line2-text a:hover {
+  color: var(--color-secondary) !important;
+  text-decoration: none;
+  background-size: 0 !important;
+  transition: none !important;
+  transform: scale(1.2) !important;
+}
+
+@media only screen and (max-width: 1250px) {
   .line1 {
     visibility: hidden;
   }
@@ -369,10 +406,8 @@ svg {
   }
 }
 
-a:not(.main-container *) {
-  position: relative;
-  bottom: 0;
-  transition: bottom 0.3s ease-in-out;
+a:not(.main-container *):hover {
+  transform: scale(1.2);
 }
 
 /* stops the nav-links*/
@@ -460,7 +495,7 @@ a:hover line {
   }
 }
 
-@media (min-width: 454px) {
+@media (min-width: 595px) {
   .navbar-expand-xs {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -525,6 +560,11 @@ a:hover line {
 .list-group-item {
   background-color: var(--color-on-background-2) !important;
   color: var(--color-on-surface-2) !important;
+  padding: 5px !important;
+}
+
+.list-group-item a:hover svg {
+  transform: scale(1.2);
 }
 
 .card-title {
@@ -573,10 +613,6 @@ a:hover line {
   align-items: center !important;
 }
 
-.list-group-item {
-  padding: 5px !important;
-}
-
 .card-img-top {
   object-fit: cover !important;
 }
@@ -587,6 +623,7 @@ img {
 
 img:hover {
   opacity: 1.0 !important;
+  transform: scale(1.05);
 }
 
 .work svg {

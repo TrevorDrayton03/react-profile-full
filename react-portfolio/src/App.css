@@ -297,7 +297,7 @@ svg {
   display: block;
   position: relative;
   top: -15px;
-  width: calc(23%);
+  width: calc(12%);
   height: 1px;
   margin-left: 300px;
   background-color: var(--color-on-surface-2);

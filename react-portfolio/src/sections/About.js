@@ -41,7 +41,7 @@ const About = () => {
                         Traqspera Technologies
                     </a>
                     {/* &nbsp;as a full stack developer and &nbsp; */}
-                    &nbsp;and&nbsp;
+                    &nbsp;and at&nbsp;
                     <a
                         href="https://www.tru.ca/"
                         alt="Thompson Rivers University"

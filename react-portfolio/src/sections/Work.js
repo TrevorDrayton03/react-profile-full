@@ -36,7 +36,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Web Application, Integration
+                            Web Application and Integration
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -76,7 +76,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Testing & Verification, DevOps
+                            Testing & Verification and DevOps
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -98,7 +98,7 @@ const Work = ({ }) => {
                                 <DocumentationIcon title="Testing.MD" />
                             </a>
                         </ListGroup.Item>
-                        <ListGroup.Item><em>C++, Docker, Doxygen, CI/CD, Google Test</em></ListGroup.Item>
+                        <ListGroup.Item><em>C++, Docker, Doxygen, GitLab CI/CD, Google Test</em></ListGroup.Item>
                     </ListGroup>
                 </Card>
                 <Card className="card d-flex flex-column">

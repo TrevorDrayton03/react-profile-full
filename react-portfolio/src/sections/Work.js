@@ -36,7 +36,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Web Application and Integration
+                            Web Application and DevOps
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -76,7 +76,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Testing & Verification and DevOps
+                            Testing & Verification
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>

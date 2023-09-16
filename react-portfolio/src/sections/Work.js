@@ -32,11 +32,11 @@ const Work = ({ }) => {
                                 rel="noreferrer"
                                 alt="Hybrid Work Security Assessment Github"
                             >
-                                Hybrid Work Security Assessment
+                                Security Compliance Evaluation Tool
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Web Application and DevOps
+                            Web Development, DevOps, Integration
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -50,7 +50,7 @@ const Work = ({ }) => {
                                 <GithubIcon title="GitHub" />
                             </a>
                         </ListGroup.Item>
-                        <ListGroup.Item><em>M(ariaDB)ERN, Apache, Linux, Burp</em></ListGroup.Item>
+                        <ListGroup.Item><em>M[ariaDB]ERN, Apache, Linux, Burp</em></ListGroup.Item>
                     </ListGroup>
                 </Card>
                 <Card>
@@ -70,9 +70,9 @@ const Work = ({ }) => {
                                 href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576"
                                 target="_blank"
                                 rel="noreferrer"
-                                alt="Physics Simulator"
+                                alt="Simulation Quality Assurance Tool"
                             >
-                                Physics Simulator
+                                Simulation Quality Assurance Tool
                             </a>
                         </Card.Title>
                         <Card.Text>
@@ -85,16 +85,16 @@ const Work = ({ }) => {
                                 href="https://github.com/TrevorDrayton03/SENG-4110-Physics-Simulator"
                                 target="_blank"
                                 rel="noreferrer"
-                                alt="Physics Simulator"
+                                alt="Simulation Quality Assurance Tool"
                             >
                                 <GithubIcon title="GitHub" />
                             </a>
                             <a href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576" target="_blank"
-                            rel="noreferrer" alt="Physics Simulator Gitlab Pipeline">
-                                <ExternalIcon title="GitLab Pipeline" />
+                            rel="noreferrer" alt="Simulation Quality Assurance Tool CI/CD Pipeline">
+                                <ExternalIcon title="Simulation Quality Assurance Tool CI/CD Pipeline" />
                             </a>
                             <a href="https://github.com/TrevorDrayton03/SENG-4110-Physics-Simulator/blob/main/docs/testing.md" target="_blank"
-                            rel="noreferrer" alt="Physics Simulator Testing.md">
+                            rel="noreferrer" alt="Simulation Quality Assurance Tool Testing.md">
                                 <DocumentationIcon title="Testing.MD" />
                             </a>
                         </ListGroup.Item>
@@ -122,7 +122,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Android Application
+                            Mobile Development
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -144,7 +144,7 @@ const Work = ({ }) => {
                         href="https://pet-universe.onrender.com/"
                         target="_blank"
                         rel="noreferrer"
-                        alt="Pet Universe External Link"
+                        alt="Online Pet Store External Link"
                     >
                         <div>
                             <Card.Img variant="top" src={PetUniverse} />
@@ -156,31 +156,31 @@ const Work = ({ }) => {
                                 href="https://pet-universe.onrender.com/"
                                 target="_blank"
                                 rel="noreferrer"
-                                alt="Pet Universe External Link"
+                                alt="Online Pet Store External Link"
                             >
-                                Pet Universe
+                                Online Pet Store
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Web Application
+                            Web Development
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
                         <ListGroup.Item>
                             <a href="https://github.com/TrevorDrayton03/SENG-4640-Online-Pet-Store" target="_blank"
-                            rel="noreferrer" alt="Pet Universe Github Repo">
+                            rel="noreferrer" alt="Online Pet Store Github Repo">
                                 <GithubIcon title="GitHub" />
                             </a>
                             <a href="https://pet-universe.onrender.com/" target="_blank"
-                            rel="noreferrer" alt="Pet Universe External Link">
-                                <ExternalIcon title="Pet Universe External Link" />
+                            rel="noreferrer" alt="Online Pet Store External Link">
+                                <ExternalIcon title="Online Pet Store External Link" />
                             </a>
                             <a href="https://pet-universe-docs.netlify.app/" target="_blank"
-                            rel="noreferrer" alt="Pet Universe External Link">
+                            rel="noreferrer" alt="Online Pet Store External Link">
                                 <DocumentationIcon title="JSDoc Generated Documentation" />
                             </a>
                         </ListGroup.Item>
-                        <ListGroup.Item><em>M(ongoDB)ERN, JSDoc</em></ListGroup.Item>
+                        <ListGroup.Item><em>M[ongoDB]ERN, JSDoc</em></ListGroup.Item>
                     </ListGroup>
                 </Card>
             </div>

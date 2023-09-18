@@ -18,7 +18,7 @@ const Work = ({ }) => {
                         href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
                         target="_blank"
                         rel="noreferrer"
-                        alt="Hybrid Work Security Assessment Github"
+                        alt="Security Compliance Evaluation Tool Github"
                     >
                         <div>
                             <Card.Img variant="top" src={HybridWorkFromHome} />
@@ -30,7 +30,7 @@ const Work = ({ }) => {
                                 href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
                                 target="_blank"
                                 rel="noreferrer"
-                                alt="Hybrid Work Security Assessment Github"
+                                alt="Security Compliance Evaluation Tool Github"
                             >
                                 Security Compliance Evaluation Tool
                             </a>
@@ -45,7 +45,7 @@ const Work = ({ }) => {
                                 href="https://github.com/TrevorDrayton03/hybrid-work-security-assessment"
                                 target="_blank"
                                 rel="noreferrer"
-                                alt="Hybrid Work Security Assessment Github"
+                                alt="Security Compliance Evaluation Tool Github"
                             >
                                 <GithubIcon title="GitHub" />
                             </a>
@@ -72,11 +72,11 @@ const Work = ({ }) => {
                                 rel="noreferrer"
                                 alt="Simulation Quality Assurance Tool"
                             >
-                                Simulation Quality Assurance Tool
+                                Simulation Testing and Verification
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Testing & Verification
+                            Unit, Integration, and System Testing, CI/CD
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -98,7 +98,7 @@ const Work = ({ }) => {
                                 <DocumentationIcon title="Testing.MD" />
                             </a>
                         </ListGroup.Item>
-                        <ListGroup.Item><em>C++, Docker, Doxygen, GitLab CI/CD, Google Test</em></ListGroup.Item>
+                        <ListGroup.Item><em>C++, Docker, Doxygen, GitLab, Google Test, CMAKE</em></ListGroup.Item>
                     </ListGroup>
                 </Card>
                 <Card className="card d-flex flex-column">

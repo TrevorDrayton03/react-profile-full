@@ -36,7 +36,7 @@ const Work = ({ }) => {
                             </a>
                         </Card.Title>
                         <Card.Text>
-                            Web Development, DevOps, Integration
+                            Web Development, DevOps, Software Integration
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush" style={{ textAlign: 'center' }}>
@@ -55,7 +55,7 @@ const Work = ({ }) => {
                 </Card>
                 <Card>
                     <a
-                        href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576"
+                        href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/1014408973"
                         target="_blank"
                         rel="noreferrer"
                         alt="Physics Simulator"
@@ -67,7 +67,7 @@ const Work = ({ }) => {
                     <Card.Body>
                         <Card.Title>
                             <a
-                                href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576"
+                                href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/1014408973"
                                 target="_blank"
                                 rel="noreferrer"
                                 alt="Simulation Quality Assurance Tool"
@@ -89,13 +89,13 @@ const Work = ({ }) => {
                             >
                                 <GithubIcon title="GitHub" />
                             </a>
-                            <a href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/989526576" target="_blank"
+                            <a href="https://gitlab.com/TrevorDrayton03/SENG-4110-Physics-Simulator/-/pipelines/1014408973" target="_blank"
                             rel="noreferrer" alt="Simulation Quality Assurance Tool CI/CD Pipeline">
                                 <ExternalIcon title="Simulation Quality Assurance Tool CI/CD Pipeline" />
                             </a>
-                            <a href="https://github.com/TrevorDrayton03/SENG-4110-Physics-Simulator/blob/main/docs/testing.md" target="_blank"
-                            rel="noreferrer" alt="Simulation Quality Assurance Tool Testing.md">
-                                <DocumentationIcon title="Testing.MD" />
+                            <a href="https://trevordrayton03.gitlab.io/-/SENG-4110-Physics-Simulator/-/jobs/5150915226/artifacts/docs/html/index.html" target="_blank"
+                            rel="noreferrer" alt="Doxygen Generated Documentation">
+                                <DocumentationIcon title="Doxygen Generated Documentation" />
                             </a>
                         </ListGroup.Item>
                         <ListGroup.Item><em>C++, Docker, Doxygen, GitLab, Google Test, CMAKE</em></ListGroup.Item>

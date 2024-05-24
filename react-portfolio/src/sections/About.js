@@ -31,17 +31,17 @@ const About = () => {
                     &nbsp;in Kamloops, British Columbia, Canada.&nbsp;
                 </p>
                 <p className="body">
-                    My work experience includes co-ops at&nbsp;
+                    I have work experience from two Co-ops, one at&nbsp;
                     <a
-                        href="https://www.traqspera.com/"
+                        href="https://ca.linkedin.com/company/traqspera"
                         alt="Traqspera Technologies"
                         target="_blank"
                         rel="noreferrer"
                     >
                         Traqspera Technologies
                     </a>
-                    {/* &nbsp;as a full stack developer and &nbsp; */}
-                    &nbsp;and at&nbsp;
+                    &nbsp;as a Full Stack Developer
+                    and the other at&nbsp;
                     <a
                         href="https://www.tru.ca/"
                         alt="Thompson Rivers University"
@@ -49,11 +49,11 @@ const About = () => {
                         rel="noreferrer"
                     >
                         Thompson Rivers University
-                    </a>.
-                    {/* as an information security analyst. */}
+                    </a>
+                    &nbsp;as an Information Security Analyst.
                 </p>
                 <p className="body">
-                    At any given time, I have a side project that I work on to further develop my knowledge of technology.
+                    At any given time, I have a side project that I work on to further develop my skills. Currently, it's using the Vulkan API with C++ to do cool stuff.
                 </p>
                 {/* <p className="body">
                     I recently finished a full stack development and integration project during a 4 month co-op at Thompson Rivers University.

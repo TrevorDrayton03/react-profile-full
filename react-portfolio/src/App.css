@@ -10,7 +10,7 @@ Surface:          #121212
 Error:            #CF6679
 On Primary:       #000000
 On Secondary:     #000000
-On Background:    #000000
+On Background:    #00000
 On Surface:       #FFFFFF
 On Error:         #FFFFFF
 
@@ -18,6 +18,7 @@ On Error:         #FFFFFF
 
 :root {
   --color-primary: #BB86FC;
+  --color-primary-2: #9E5FE2;;
   --color-primary-variant: #7C6BF2;
   --color-primary-variant-2: #1A0080;
   --color-primary-variant-3: #211653;
@@ -37,7 +38,7 @@ On Error:         #FFFFFF
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
   height: 8px;
 }
 
@@ -46,11 +47,11 @@ On Error:         #FFFFFF
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-secondary);
+  background: var(--color-primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-secondary-2);
+  background: var(--color-primary-2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -77,7 +78,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-background) !important;
   min-width: 200px;
-  zoom:1.07;
+  zoom:0.85;
 }
 
 /* prevent horizontal scrolling */
@@ -184,10 +185,6 @@ svg {
   position: relative;
 }
 
-/* .svg-container:hover {
-  filter: brightness(0.7);
-} */
-
 .logo-text {
   position: absolute;
   top: 60%;
@@ -200,7 +197,9 @@ svg {
 
 .intro {
   color: var(--color-primary);
-  padding-bottom: 300px;
+  padding-bottom: 500px;
+  padding-top: 100px;
+
 }
 
 .intro p {
@@ -220,12 +219,13 @@ svg {
 .intro h2 {
   color: var(--color-on-surface-2);
   font-size: clamp(30px, 8vw, 75px);
+  font-size: 24px;
 }
 
 .about {
   color: var(--color-primary);
-  padding-bottom: 250px;
-  padding-top: 250px;
+  padding-bottom: 450px;
+  padding-top: 350px;
   display: flex;
   flex:1;
 }
@@ -242,17 +242,6 @@ svg {
 .about h1 {
   color: var(--color-on-surface);
   font-size: 60px;
-}
-
-.about h3::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -15px;
-  width: calc(61%);
-  height: 1px;
-  margin-left: 180px;
-  background-color: var(--color-on-surface-2);
 }
 
 .about h3 {
@@ -295,17 +284,6 @@ svg {
 .work h1 {
   color: var(--color-on-surface);
   font-size: 60px;
-}
-
-.work h3::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -15px;
-  width: calc(12%);
-  height: 1px;
-  margin-left: 300px;
-  background-color: var(--color-on-surface-2);
 }
 
 .work h3 {
@@ -362,6 +340,7 @@ svg {
   width: 45px;
   height: 45px;
   padding: 5px;
+  gap: 50px; 
 }
 
 .line1-text a {
@@ -566,6 +545,9 @@ a:hover line {
   background-color: var(--color-on-background-2) !important;
   color: var(--color-on-surface-2) !important;
   padding: 5px !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 20px !important;
 }
 
 .list-group-item a:hover svg {
@@ -580,6 +562,7 @@ a:hover line {
 
 .card-text {
   font-size: 16px !important;
+  display: none !important;
 }
 
 .card-title a {
@@ -632,8 +615,8 @@ img:hover {
 }
 
 .work svg {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   display: inline-block;
 }
 

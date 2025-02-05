@@ -7,7 +7,7 @@ function GithubIcon({ title }) {
       // height="30px"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-    // viewBox="0 0 24 24"
+    viewBox="0 0 30 30"
     >
       <title>{title}</title>
       <path

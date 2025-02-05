@@ -5,7 +5,7 @@ function ExternalIcon({ title }) {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
-            // viewBox="0 0 200 200"
+            viewBox="0 0 30 30"
             fill="none"
             stroke="var(--color-on-surface)"
             strokeWidth="2"

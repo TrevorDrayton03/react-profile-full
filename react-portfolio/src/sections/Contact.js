@@ -18,10 +18,15 @@ const Contact = () => {
             {/* <a href="https://github.com/TrevorDrayton03" target="_blank" rel="noreferrer">
                 <GithubIcon title="Trevor Drayton's Github Repo" />
             </a> */}
-            <a href="mailto:trevorpdrayton@gmail.com" target="_blank" rel="noreferrer">
+            {/* <a href="mailto:trevorpdrayton@gmail.com" target="_blank" rel="noreferrer">
                 <MailIcon />
-            </a>
+            </a> */}
             </span>
+        </div>
+        <div>
+            <p style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', textAlign: 'center', fontSize:'18px', color:"var(--color-on-surface-2)" }}>
+                I’m looking for opportunities in graphics programming—reach out if you’re working on exciting rendering tech!
+            </p>
         </div>
         </div>
     );

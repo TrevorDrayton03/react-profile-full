@@ -6,53 +6,12 @@ const About = () => {
             <div className="col">
                 <h3 className="aboutme" >1. About Me</h3>
                 <p className="body">
-                    I graduated in April 2024 from the&nbsp;
-                    <a
-                        href="https://www.tru.ca/science/programs/engineering/software-engineering.html"
-                        alt="Software Engineering"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Software Engineering, Bachelor of Engineering
-                    </a>
-                    &nbsp;program at&nbsp;
-                    <a
-                        href="https://www.tru.ca/"
-                        alt="Thompson Rivers University"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Thompson Rivers University
-                    </a>
-                    &nbsp;in Kamloops, BC, Canada.&nbsp;
+                    I have experience in full-stack development and cybersecurity, but my passion lies in computer graphics and Vulkan.
                 </p>
                 <p className="body">
-                    I have one year of professional work experience from two co-ops, one at&nbsp;
-                    <a
-                        href="https://ca.linkedin.com/company/traqspera"
-                        alt="Traqspera Technologies"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Traqspera Technologies
-                    </a>
-                    &nbsp;as a Full Stack Developer
-                    and the other at&nbsp;
-                    <a
-                        href="https://www.tru.ca/"
-                        alt="Thompson Rivers University"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Thompson Rivers University
-                    </a>
-                    &nbsp;as an Information Security Analyst.
-                </p>
+                I am currently building a custom game engine using Vulkan, implementing rendering techniques from scratch to understand the full pipeline.                </p>
                 <p className="body">
-                    Prior to obtaining my degree, I gained 10 years of transferable skills from working in retail, sales, and legal.
-                </p>
-                <p className="body">
-                    I am always learning and working on projects to further deepen my skills.
+                    My goal is to work in graphics programming, rendering engineering, or game engine development.
                 </p>
             </div>
             <div className="col" style={{ justifyContent: 'center', display: 'flex' }}>

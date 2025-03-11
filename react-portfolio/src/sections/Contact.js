@@ -12,9 +12,9 @@ const Contact = () => {
         </a>
         <div className="line2">
             <span className="line2-text">
-            <a href="https://www.linkedin.com/in/trevor-drayton/" target="_blank" rel="noreferrer">
+            {/* <a href="https://www.linkedin.com/in/trevor-drayton/" target="_blank" rel="noreferrer">
                 <LinkedinIcon />
-            </a>
+            </a> */}
             {/* <a href="https://github.com/TrevorDrayton03" target="_blank" rel="noreferrer">
                 <GithubIcon title="Trevor Drayton's Github Repo" />
             </a> */}
@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
         <div>
             <p style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', textAlign: 'center', fontSize:'18px', color:"var(--color-on-surface-2)" }}>
-                I’m looking for opportunities in graphics programming—reach out if you’re working on exciting rendering tech!
+                If you’re looking for someone who values resilience, adaptability, and a genuine commitment to continuous self-improvement, let’s connect.
             </p>
         </div>
         </div>

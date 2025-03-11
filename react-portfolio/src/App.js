@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" id="intro">
       <NavBar brandClick={handleRouteClick} scrollToSection={scrollToSection} />
       <div className="line1" />
       <span className="line1-text">
@@ -53,7 +53,7 @@ function App() {
       </span>
       <div className="main-container">
         <Intro></Intro>
-        <About></About>
+        {/* <About></About> */}
         <Projects></Projects>
         <Contact></Contact>
       </div>

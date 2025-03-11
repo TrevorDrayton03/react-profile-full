@@ -4,7 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../icons/Logo.jsx';
 
 const NavBar = ({ scrollToSection, brandClick }) => {
-    const aboutLinkRef = useRef(null);
+    // const aboutLinkRef = useRef(null);
+    const introLinkRef = useRef(null);
     const projectsLinkRef = useRef(null);
     const contactLinkRef = useRef(null);
 
@@ -27,8 +28,10 @@ const NavBar = ({ scrollToSection, brandClick }) => {
     useEffect(() => {
         const handleKeyPress = (event) => {
             let linkRef;
-            if (event.key === '1' && aboutLinkRef.current) {
-                linkRef = aboutLinkRef.current;
+            // if (event.key === '1' && aboutLinkRef.current) {
+            //     linkRef = aboutLinkRef.current;
+            if (event.key === '1' && introLinkRef.current) {
+                linkRef = introLinkRef.current;
             } else if (event.key === '2' && projectsLinkRef.current) {
                 linkRef = projectsLinkRef.current;
             } else if (event.key === '3' && contactLinkRef.current) {
@@ -69,13 +72,21 @@ const NavBar = ({ scrollToSection, brandClick }) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link
+                    {/* <Nav.Link
                         href="#about"
                         onClick={(event) => handleLinkClick(event, "#about", "#about")}
                         ref={aboutLinkRef}
 
                     >
                         1. About
+                    </Nav.Link> */}
+                    <Nav.Link
+                        href="#intro"
+                        onClick={(event) => handleLinkClick(event, "#intro", "#intro")}
+                        ref={introLinkRef}
+
+                    >
+                        1. Intro
                     </Nav.Link>
                     <Nav.Link
                         href="#projects"
